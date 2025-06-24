@@ -2,13 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'mvn3'  // Ensure this Maven tool is configured in Jenkins global tools
+        maven 'mvn3' // This must match Maven tool name in Jenkins global config
     }
 
     stages {
         stage('Clone the source code') {
             steps {
-                echo 'Already configured'
+                // Replace this with your actual Git repo
+                git url: https://github.com/Saijoe112/docker-cicd-students-demo.git', branch: 'main'
             }
         }
 
