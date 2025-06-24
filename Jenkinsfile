@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage('Clone the source code') {
             steps {
-                // Replace this with your actual Git repo
-                git url: https://github.com/Saijoe112/docker-cicd-students-demo.git', branch: 'main'
+                // Corrected git URL syntax
+                git url: 'https://github.com/Saijoe112/docker-cicd-students-demo.git', branch: 'main'
             }
         }
 
